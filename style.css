@@ -17,9 +17,9 @@ h1{margin:0 0 8px;font-size:2rem}
 .card.solved{border-color:var(--ok)}
 .card h2{margin:0 0 4px;font-size:1.2rem}
 .card p{margin:0 0 12px;color:var(--muted)}
-.lines{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.lines{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:minmax(0,1fr);gap:6px}
 .line{display:flex;align-items:center;gap:8px;background:#0b1220;border:1px solid var(--line);border-radius:8px;padding:6px 8px;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.95rem;cursor:grab;white-space:pre}
-.line code{flex:1;overflow-x:auto}
+.line code{flex:1;min-width:0;min-width:0;overflow-x:auto}
 .line.dragging{opacity:.4}
 .line.over{border-color:var(--accent)}
 .line.wrong{border-color:var(--bad)}
