@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TechBox Domain – HTML Parsons Problems</title>
+  <meta name="description" content="Five HTML Parsons problems. Drag the lines into the right order to solve each one.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' rx='3' fill='%2338bdf8'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="/">TechBox<span>Domain</span></a>
+      <nav><a href="#puzzles">Puzzles</a> <a href="#about">About</a></nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <h1>HTML Parsons Problems</h1>
+      <p>Each puzzle has the lines of a working HTML snippet, scrambled. Put them in the correct order, then press <strong>Check</strong>. You must solve all five.</p>
+      <div class="progress" aria-live="polite">
+        <div class="bar"><div id="bar-fill"></div></div>
+        <span id="progress-text">0 / 5 solved</span>
+      </div>
+    </section>
+
+    <section id="puzzles" aria-label="Puzzles"></section>
+
+    <div id="finish" class="finish" hidden>
+      <h2>🎉 All 5 problems solved!</h2>
+      <p>Nice work – you know your HTML structure.</p>
+    </div>
+
+    <section id="about" class="about">
+      <h2>How it works</h2>
+      <p>Drag a line (or use the ▲ ▼ buttons) to reorder it. When a snippet is correct it locks and shows its proper indentation. Press <em>Shuffle</em> to start a puzzle over.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="wrap">© techboxdomain.com</div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
